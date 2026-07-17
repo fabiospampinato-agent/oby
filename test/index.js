@@ -2240,7 +2240,7 @@ describe ( 'oby', () => {
 
     });
 
-    it ( 'supports checking dependecies for updates on synchronous effects also', t => {
+    it ( 'supports checking dependencies for updates on synchronous effects also', t => {
 
       const o = $(0);
       const memo = $.memo ( o, { equals: () => true } );
@@ -3428,7 +3428,7 @@ describe ( 'oby', () => {
 
   describe ( 'if', it => {
 
-    it ( 'does not resolve values again when the condition changes but the reuslt branch is the same', t => {
+    it ( 'does not resolve values again when the condition changes but the result branch is the same', t => {
 
       let sequence = '';
 
@@ -4097,7 +4097,7 @@ describe ( 'oby', () => {
 
     });
 
-    it ( 'supports checking dependecies for updates on synchronous memos also', t => {
+    it ( 'supports checking dependencies for updates on synchronous memos also', t => {
 
       const o = $(0);
       const memo = $.memo ( o, { equals: () => true } );
@@ -9585,7 +9585,7 @@ describe ( 'oby', () => {
 
   describe ( 'switch', it => {
 
-    it ( 'does not resolve values again when the condition changes but the reuslt case is the same', t => {
+    it ( 'does not resolve values again when the condition changes but the result case is the same', t => {
 
       let sequence = '';
 
@@ -9772,7 +9772,7 @@ describe ( 'oby', () => {
 
   describe ( 'ternary', it => {
 
-    it ( 'does not resolve values again when the condition changes but the reuslt branch is the same', t => {
+    it ( 'does not resolve values again when the condition changes but the result branch is the same', t => {
 
       let sequence = '';
 
@@ -10768,7 +10768,7 @@ describe ( 'oby', () => {
 
     });
 
-    it ( 'can execute a function as if it happend inside another owner', t => {
+    it ( 'can execute a function as if it happened inside another owner', t => {
 
       $.root ( () => {
 
