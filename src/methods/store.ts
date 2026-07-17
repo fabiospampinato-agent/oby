@@ -819,7 +819,7 @@ const throwNoSetterError = (): never => {
 
 //TODO: Maybe have the "on" method trigger immediately too like "$.on", or maybe the other way around, which seems more flexible
 //TODO: Explore converting target values back to numbers (the Proxy always receives strings) whenever possible, to save memory
-//TODO: Implement "_onRoots" better, perhaps provding string paths instead, which should be more powerful
+//TODO: Implement "_onRoots" better, perhaps providing string paths instead, which should be more powerful
 
 const store = <T> ( value: T, options?: StoreOptions ): T => {
 

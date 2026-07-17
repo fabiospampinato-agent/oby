@@ -16,7 +16,7 @@ class Scheduler {
   counter: number = 0;
   locked: boolean = false;
 
-  /* QUEING API */
+  /* QUEUEING API */
 
   flush = (): void => {
 

@@ -18,7 +18,7 @@
 - `$.for`: added a fast path for plain arrays, where the index you receive is a raw number
 
 ### Version 14.3.5
-- Readme: aded a warning about `$.store.unwrap`
+- Readme: added a warning about `$.store.unwrap`
 - `$.for`: added support for receiving an undefined value, for convenience
 
 ### Version 14.3.4
@@ -335,7 +335,7 @@ Overall I think the API got way simpler in many cases, harder to misuse, we got 
 - `$.readonly`: simplified implementation
 - `$.target`: simplified implementation
 - `$.suspendable`: simplified slightly
-- `$.if`: removed a superflous semicolon
+- `$.if`: removed a superfluous semicolon
 - `$.suspended`: generalized slightly, deleting `$.suspendable`
 - `$.tryCatch`: simplified implementation
 - New internal method: `$.unwrap`, for unwrapping a value if it's a frozen observable
@@ -437,7 +437,7 @@ Overall I think the API got way simpler in many cases, harder to misuse, we got 
 - `$.forIndex`: calling the map function with the index of the value too
 - `$.for`: calling the map function with an observable to the index of the value too
 - `$.get`: added a comment
-- `$.for`/`$.forIndex`: ensuring mapping happens in a sample, to avoid potential unwanted suscriptions
+- `$.for`/`$.forIndex`: ensuring mapping happens in a sample, to avoid potential unwanted subscriptions
 - `$.for`/`$.forIndex`: improved support for stores, ensuring assignments at indexes are detected too
 - `$.store`: simplified some code
 - `$.on`: ensuring the listener is always called upon registration
@@ -490,7 +490,7 @@ Overall I think the API got way simpler in many cases, harder to misuse, we got 
 - Observable: added symbols for detecting the various kinds of observables: frozen/readable/writable
 - Observable: added support for returning the underlying instance when called with SYMBOL_OBSERVABLE (readable/writable)
 - New methods: on/off, for registering/unregistering a listener for an observable directly
-- `$.readonly`: returing the same observable if it's already read-only
+- `$.readonly`: returning the same observable if it's already read-only
 - Added support for using objects with a "call" method as cleanup functions, error handlers and observable listeners
 
 ### Version 8.2.1
@@ -519,7 +519,7 @@ Overall I think the API got way simpler in many cases, harder to misuse, we got 
 - Mangled a couple extra properties
 
 ### Version 8.0.5
-- `$.for`: broaded types to allow read-only arrays
+- `$.for`: broadded types to allow read-only arrays
 
 ### Version 8.0.4
 - Renamed "S" file to "$"
@@ -581,7 +581,7 @@ Overall I think the API got way simpler in many cases, harder to misuse, we got 
 
 ### Version 7.0.5
 - Package.json: updated repository url
-- `$.batch`: ensuring that if multiple observables are updated whitin itself they still trigger one update of for computeds/effects, even if they listened to many of those observables
+- `$.batch`: ensuring that if multiple observables are updated within itself they still trigger one update of for computeds/effects, even if they listened to many of those observables
 
 ### Version 7.0.4
 - `$.for`: storing mapped items in a bit less memory
@@ -656,7 +656,7 @@ Overall I think the API got way simpler in many cases, harder to misuse, we got 
 - Mangling a couple extra new properties
 - Observable: always forcing a refresh of the parent computed when needed, for extra safety
 - Mangling a few extra properties
-- Affixing some class properties, keeping the shape of the class mroe stable
+- Affixing some class properties, keeping the shape of the class more stable
 - Observer: deleted "dirty" property
 - Initial somewhat messy classless reorganization
 - Significant cleanup
@@ -709,7 +709,7 @@ Overall I think the API got way simpler in many cases, harder to misuse, we got 
 - Updated list of mangled properties
 - `$.map`: replaced roots with plain observers internally, which are a bit cheaper to make
 - Added a little benchmark measuring simple updates performance
-- Keeping track of simulatenous iterations of effects too
+- Keeping track of simultaneous iterations of effects too
 - Updates benchmark: add a commented-out worst-case scenario
 - Switched to a 2-way disposal algorithm, optimized for reactions observing only one and the same observable
 - Observer: avoiding traversing old observers on postdispose, which was entirely useless
@@ -730,7 +730,7 @@ Overall I think the API got way simpler in many cases, harder to misuse, we got 
 - Observable: ensuring update functions are detected properly
 - `$.if`/`$.ternary`/`$.switch`: ensuring values are resolved only once if the condition changes but the result value is the same
 - Added a couple of tests
-- Renamed some arguments for better clearity
+- Renamed some arguments for better clarity
 - Readme: updated
 
 ### Version 5.4.0
@@ -765,7 +765,7 @@ Overall I think the API got way simpler in many cases, harder to misuse, we got 
 - Renamed an internal variable
 - Deleted "emit" method from readonly observables
 - Added a Root class, for better internal clarity
-- Cleanup benchmark: rewritten to be more representative of real world performane
+- Cleanup benchmark: rewritten to be more representative of real world performance
 - New Observable methods: dispose, isDisposed, which unlock some extra performance
 - Observable: slightly optimized emission
 - Removed an old comment
@@ -913,7 +913,7 @@ Overall I think the API got way simpler in many cases, harder to misuse, we got 
 - Added an "update" observable method for updating the value at a path conveniently
 
 ### Version 1.4.0
-- Swithced back to Sets for storing listeners, for much better runtime performance
+- Switched back to Sets for storing listeners, for much better runtime performance
 - Computed method: ensuring the function gets always passed the value of the parent observable
 - Computed method: added support for manually listing additional dependencies
 
